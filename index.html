@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+ <html>
+ <!--definice microdata-->
+ <head class="hlavicka">
+  <!--nazev okna--->
+     <div class="nameWindow">
+         <title id="nazevOkna">
+         Amazing drawing app!    
+         </title>
+     </div>
+     <link rel="stylesheet" href="style.css" media="screen" />
+    
+ </head>
+            <!--sem ma prijiti header-->
+            <!--semka prijde header-->
+            <!--tady to obslouzim telo s udalosti on mouseEvent -->
+     <body id="telo" >
+        <!--zde budou inputy pro text fieldy-->        
+         <!--zde je telo dokumentu-->
+         <div class="Uvod">
+         <h1 class="mainNadpis" id="nazevAplik">
+          Velka aplikace jedinecneho malovani
+         </h1>
+         </div>
+         <!--zde se zacina tvorit malovaci platno-->
+    <div class="paintBox" >
+        <svg class="panel" id="kresleni" width='500' height='300'  viewBox='0 0 500 300' >
+            <!--vykresli jako element pohybuici se text-->
+             <g transform="translate(50,50)">
+    <text id="TextElement" x="0" y="0" style="font-family:Kristen ITC;font-size:24"> Vitejete ve svete malovani SVG!
+      <animateMotion path="M 0 0 L 50 150" dur="5s" fill="freeze" />
+    </text>
+  </g>
+            <!--konec vykresleni uvitaciho textu v malovani-->
+  
+            <!--kruh maluji-->
+            <circle id="kruh" cx="50" cy="50" r="40" stroke="black"
+            stroke-width="2" fill="green"/>
+ </svg>    
+       </div>
+          <!--ukaz souradnice-->
+         <div class="display">   
+           <br>
+         <input id="vystup" type="text" name="jmeno" value="ANO">
+         <br>
+          <input id="pozition" type="text" name="jmeno2" value="">  
+         <div>
+             <!--ukaz souradnice-->
+
+             <input id="nepise" type="text" name="zmena" value="">  
+    </div>
+       
+<script src="code.js"> </script>
+    </body>
+             </html>
+  
